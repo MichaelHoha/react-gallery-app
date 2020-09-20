@@ -5,6 +5,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+
+      {/*part 1 */}
       <div className='header'>
         <button className='left-button'>next</button>
         <button className='right-button'>back</button>
@@ -12,20 +14,23 @@ function App() {
 
       </div>
 
+      {/* part 2 */}
       <div className='gallery'>
         {ImageData.map((element, index) => {
           return (
-            <img className='gallery-pics' src={element.url} alt='react-task' />
+            <img className='gallery-pics' key={index} src={element.url} alt='react-task' />
           )
         })}
 
       </div>
 
-      <div className='conten'>
+        {/* part 3 */}
+      <div className='content'>
         <h3>content</h3>
 
       </div>
 
+        {/* part 4 */}
       <div className='lorem-ipsum'>
         <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -41,6 +46,7 @@ function App() {
 
       </div>
 
+        {/* part 5 */}
       <div className='footer'>
         <p>Michael Hohashvili.</p>
 
