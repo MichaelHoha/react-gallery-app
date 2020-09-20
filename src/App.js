@@ -22,7 +22,7 @@ function App() {
       </div>
 
       <div className='conten'>
-        <p>content</p>
+        <h3>content</h3>
 
       </div>
 
